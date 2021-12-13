@@ -10,4 +10,8 @@ const tokenOf = {
   "%": 'PERCENT',
   '@': 'AT',
   '(': 'LEFTPARENT',
-  ')': 'RIGHTPARENT'
+  ')': 'RIGHTPARENT',
+  '|': 'LINE',
+  '=': 'EQUALS',
+  '\\': 'BACKSLASH'
+}
