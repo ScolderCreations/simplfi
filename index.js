@@ -15,8 +15,7 @@ for (line in listVals) { // targets one line at a time
     } 
     else if (!isNaN(new Number(token))) 
     {tokentype = "NUMBER"}
-    else if (typeof token == 'string')
-    {tokentype =  "STRING"}
-    }
+    else if ((token.startsWith("'") || (token.startsWith('"')) && (token.endsWith('"') || token.endsWith("'"))))
+    {tokentype = "STRING"}
   }
 }
