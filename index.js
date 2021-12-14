@@ -13,8 +13,8 @@ for (line in listVals) { // targets one line at a time
   for (token in line) {
     var tokentype;
     if (lexer.tokenOf[token]) {
-      tokentype.push('{token: lexer.tokenOf[token]}');
-    } 
+      tokentype.push(`\{${token}: lexer.tokenOf[token]\}`);
+    }
     else if (!isNaN(new Number(token))) 
     {tokentype.push({token: "NUMBER"})}
     else if ((token.startsWith("'") || (token.startsWith('"')) && (token.endsWith('"') || token.endsWith("'"))))
