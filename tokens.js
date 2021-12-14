@@ -24,6 +24,11 @@ const tokenOf = {
   '~': "SENO",
   ':': 'ISOPERATOR',
   '{': 'LEFTCURL',
-  '}': 'RIGHTCURL'
+  '}': 'RIGHTCURL',
+  '~=': 'SIMILAR',
+  '==': 'EQUAL',
+  '++': 'INCREMENT',
+  '--': 'DECREMENT',
+  '>=': 'GREATEREQUAL'
 }
 exports.tokenOf = tokenOf
