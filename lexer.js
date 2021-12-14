@@ -13,5 +13,17 @@ const tokenOf = {
   ')': 'RIGHTPARENT',
   '|': 'LINE',
   '=': 'EQUALS',
-  '\\': 'BACKSLASH'
+  '\\': 'BACKSLASH',
+  '[': 'LEFTBRACKET',
+  ']': 'RIGHTBRACKET',
+  '&': 'AND',
+  '^': 'POWER',
+  "<": 'LEFTANGLE',
+  ">": 'RIGHTANGLE',
+  ";": "SEMI",
+  '~': "SENO",
+  ':': 'ISOPERATOR',
+  '{': 'LEFTCURL',
+  '}': 'RIGHTCURL'
 }
+exports.tokenOf = tokenOf
