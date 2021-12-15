@@ -1,0 +1,4 @@
+variable = 1 + 2
+print(variable)
+print(PI)
+print(variable + 2)
