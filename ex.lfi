@@ -14,3 +14,4 @@ var tempCeil = ceilOf ( 5.3 )
 print ( tostr tempCeil + " is @@ @the ceiling of 5.3" )
 q = "What's your name?"
 name = ask q
+print ( name )

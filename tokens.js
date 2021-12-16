@@ -1,4 +1,3 @@
-
 const tokenOf = {
   '|': '||',
   '\\': '\\',
@@ -41,5 +40,14 @@ const tokenOf = {
   'mod': '%',
   '#': '//'
 }
-
+const moduleImports = {
+  "// .ask": "const prompt = require('prompt-sync')();",
+  "// .file": "const fs = require('fs');"
+}
+const modules = [
+  "// .ask",
+  "// .file"
+]
 exports.tokenOf = tokenOf
+exports.modules = modules
+exports.moduleImports = moduleImports

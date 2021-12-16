@@ -59,8 +59,8 @@ for (line of outputJS.split('\n')) {
   replaceOut(' ( ', '(')
 }
 
-if (outputJS.includes("//.ask")) {
-  outputJS = "const prompt = require('prompt-sync')();\n" + outputJS
+for (item of tokens.modules) {
+  replaceOut(item, tokens.moduleImports[item])
 }
 console.log(outputJS);
 

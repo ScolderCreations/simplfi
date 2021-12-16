@@ -1,1 +1,1 @@
-npm install || echo "npm not found" && exit 1
+npm install && exit 0 || echo "npm not found" && exit 1
