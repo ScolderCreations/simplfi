@@ -1,5 +1,7 @@
 variable = 1 + 2
-print(variable)
-print(PI)
-print(variable + 2)
+print ( variable )
+print ( PI )
+print ( variable + 2 )
 define soup
+  print( variable )
+end

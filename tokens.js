@@ -38,13 +38,13 @@ const tokenOf = {
   '!=': '!==',
   '#!=': '!===',
   '&&': '&',
-  'define': 'function •() {¶}',
+  'define': 'function •() {',
   'print': 'console.log',
   'class': 'class • {¶}',
   'import': 'import * from •',
-  'if': 'if (•) {¶}',
-  'else': 'else {•}',
-  'elif': 'else if (•) {¶}',
+  'if': 'if (•) {',
+  'else': 'else {',
+  'elif': 'else if (•) {',
   'PI': 'Math.PI',
   'floorOf': 'Math.floor',
   'ceilOf': 'Math.ceiling',
@@ -52,7 +52,15 @@ const tokenOf = {
   'combineText': '"".concat',
   'toLowercase': '•.toLowerCase()',
   'toAllCaps': '•.toUpperCase()',
-  'trimText': '•.splice(∞)'
+  'trimText': '•.splice(∞)',
+  'end': '}'
 }
 
+const treplaceWith = Object({
+  new Array(' (','('),
+  new Array(' )',')'),
+  new Array('\n',';')
+})
+
 exports.tokenOf = tokenOf
+exports.replaceWith = treplaceWith
