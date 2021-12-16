@@ -4,4 +4,7 @@ print ( PI )
 print ( variable + 2 )
 define soup
   print( variable )
-end
+taco = 5
+pie = taco
+food = 'good'
+print( ceilOf ( 5.3 ) )
