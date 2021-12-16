@@ -37,7 +37,9 @@ const tokenOf = {
   'list': ' Array',
   'obj': 'Object',
   'set': 'new Set',
-  '!var': 'const '
+  '!var': 'const',
+  'ask': 'prompt(•)',
+  '': ''
 }
 
 exports.tokenOf = tokenOf

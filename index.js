@@ -47,12 +47,12 @@ function replaceOut(a,b) {
 }
 
 for (line of outputJS.split('\n')) {
-replaceOut(' )', ')')
-replaceOut(' (', '(')
-replaceOut(') ', ')')
-replaceOut('( ', '(')
-replaceOut(' ) ', ')')
-replaceOut(' ( ', '(')
+  replaceOut(' )', ')')
+  replaceOut(' (', '(')
+  replaceOut(') ', ')')
+  replaceOut('( ', '(')
+  replaceOut(' ) ', ')')
+  replaceOut(' ( ', '(')
 }
 
 console.log(outputJS);
