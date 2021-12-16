@@ -7,4 +7,4 @@ define soup
 taco = 5
 pie = taco
 food = 'good'
-print( ceilOf ( 5.3 ) )
+print( str ( ceilOf ( 5.3 ) ) + " is the ceiling of 5.3" )

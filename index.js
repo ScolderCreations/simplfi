@@ -38,6 +38,6 @@ for (line of listVals) {
   } outputJS+="\n"
 }
 
-for (pair in tokens.replaceWith) {
+for (pair of tokens.replaceWith) {
   outputJS.replace(pair[1], pair[2])
 }
