@@ -43,12 +43,21 @@ for (line of listVals) {
 }
 
 function replaceOut(a,b) {
-  outputJS.replace(a,b)
+  outputJS = outputJS.replace(a,b)
 }
 
+for (line of outputJS.split('\n')) {
 replaceOut(' )', ')')
 replaceOut(' (', '(')
 replaceOut(') ', ')')
 replaceOut('( ', '(')
+replaceOut(' ) ', ')')
+replaceOut(' ( ', '(')
+}
 
 console.log(outputJS);
+
+try {fs.readFileSync('./out/output.js')} catch {
+  fs.mkdirSync('./out/')
+}
+fs.writeFileSync('./out/output.js', outputJS)

@@ -1,9 +1,10 @@
-variable = 1 + 2
+var variable = 1 + 2
+!var constant = { 1, 2, "three" }
 print ( variable )
 print ( PI )
 print ( variable + 2 )
 define soup
-  print( variable )
+  print ( variable )
 end
 
 print( str ( ceilOf ( 5.3 ) ) + " is the ceiling of 5.3" )

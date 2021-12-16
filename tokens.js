@@ -1,33 +1,12 @@
-const method = " ";
-const inputA = " ", inputB = " ";
 
 const tokenOf = {
-  "+": '+',
-  "-": '-',
-  ".": '.',
-  "'": "'",
-  '"': '""',
-  "*": '*',
-  "!": '!',
-  "?": '?',
   "%": '%%',
-  '@': '@',
-  '(': '(',
-  ')': ')',
   '|': '||',
   '=': '=',
   '\\': '\\',
   '[': '[',
   ']': ']',
   '&': '&&',
-  '^': '^',
-  "<": '<',
-  ">": '>',
-  ";": ";",
-  '~': "~",
-  "`": "`",
-  ':': ':',
-  '{': '{',
   '}': '}',
   '~=': '==',
   '==': '===',
@@ -53,7 +32,12 @@ const tokenOf = {
   'toLowercase': '•.toLowerCase()',
   'toAllCaps': '•.toUpperCase()',
   'trimText': '•.splice(∞)',
-  'end': '}'
+  'end': '\n}',
+  'randomDecimal': 'Math.random',
+  'list': ' Array',
+  'obj': 'Object',
+  'set': 'new Set',
+  '!var': 'const '
 }
 
 exports.tokenOf = tokenOf
