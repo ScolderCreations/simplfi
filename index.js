@@ -41,3 +41,5 @@ for (line of listVals) {
 for (pair of tokens.replaceWith) {
   outputJS.replace(pair[1], pair[2])
 }
+
+console.log(outputJS);

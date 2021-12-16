@@ -59,7 +59,9 @@ const tokenOf = {
 const treplaceWith = [
   [' (', '('],
   [' )', ')'],
-  ['\n', ';']
+  [' = ', '='],
+  [' + ', '+'],
+  [' - ', '-']
 ]
 
 exports.tokenOf = tokenOf
