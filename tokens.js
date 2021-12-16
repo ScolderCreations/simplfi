@@ -56,13 +56,4 @@ const tokenOf = {
   'end': '}'
 }
 
-const treplaceWith = [
-  [' (', '('],
-  [' )', ')'],
-  [' = ', '='],
-  [' + ', '+'],
-  [' - ', '-']
-]
-
 exports.tokenOf = tokenOf
-exports.replaceWith = treplaceWith

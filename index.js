@@ -26,7 +26,11 @@ for (line of listVals) {
         }
         if (tokens.tokenOf[token].includes('∞')) { 
         ti++
-        outputJS = outputJS + tokens.tokenOf[token].replace("∞", line[lineind + 2]) + " "
+        if (tokens.tokenOf[line[lineind+2]]) {
+          outputJS = outputJS + tokens.tokenOf[token].replace("∞", tokens.tokenOf[line[lineind + 2]]) + " "
+        } else {
+          outputJS = outputJS + tokens.tokenOf[token].replace("∞", line[lineind + 2]) + " "
+        }
         }
       } else {
         outputJS = outputJS + tokens.tokenOf[token] + " "
@@ -38,8 +42,13 @@ for (line of listVals) {
   } outputJS+="\n"
 }
 
-for (pair of tokens.replaceWith) {
-  outputJS.replace(pair[1], pair[2])
+function replaceOut(a,b) {
+  outputJS.replace(a,b)
 }
+
+replaceOut(' )', ')')
+replaceOut(' (', '(')
+replaceOut(') ', ')')
+replaceOut('( ', '(')
 
 console.log(outputJS);
