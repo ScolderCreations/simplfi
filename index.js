@@ -14,6 +14,7 @@ function convertToToken(token, input) {
   if (tokens.tokenOf[token]) {
     if (tokens.tokenOf[token].includes('•')) { 
       output = input + tokens.tokenOf[token] + " "
+    } else if (tokens.tokenOf[token].includes('¶')){ 
     } else {
       output = input + tokens.tokenOf[token] + " "
     }} else {

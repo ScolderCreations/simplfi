@@ -48,7 +48,7 @@ const tokenOf = {
   'PI': 'Math.PI',
   'floorOf': 'Math.floor',
   'ceilOf': 'Math.ceiling',
-  'toString': '•.toString',
+  'String': '•.toString',
   'combineText': '"".concat',
   'toLowercase': '•.toLowerCase()',
   'toAllCaps': '•.toUpperCase()',
