@@ -1,8 +1,6 @@
 
 const tokenOf = {
-  "%": '%%',
   '|': '||',
-  '=': '=',
   '\\': '\\',
   '[': '[',
   ']': ']',
@@ -13,7 +11,7 @@ const tokenOf = {
   '++': '++',
   '--': '--',
   '>=': '>=',
-  '<=': '=<',
+  '<=': '<=',
   '!=': '!==',
   '#!=': '!===',
   '&&': '&',
@@ -26,20 +24,22 @@ const tokenOf = {
   'elif': 'else if (•) {',
   'PI': 'Math.PI',
   'floorOf': 'Math.floor',
-  'ceilOf': 'Math.ceiling',
-  'String': '•.toString',
+  'ceilOf': 'Math.ceil',
+  'tostr': '•.toString()',
+  'str': 'String',
   'combineText': '"".concat',
   'toLowercase': '•.toLowerCase()',
   'toAllCaps': '•.toUpperCase()',
   'trimText': '•.splice(∞)',
-  'end': '\n}',
+  'end': '}',
   'randomDecimal': 'Math.random',
-  'list': ' Array',
+  'list': 'Array',
   'obj': 'Object',
   'set': 'new Set',
   '!var': 'const',
   'ask': 'prompt(•)',
-  '': ''
+  'mod': '%',
+  '#': '//'
 }
 
 exports.tokenOf = tokenOf

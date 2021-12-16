@@ -36,7 +36,11 @@ for (line of listVals) {
         outputJS = outputJS + tokens.tokenOf[token] + " "
       }
     } else {
-      outputJS = outputJS + String(token) + " "
+      if (String(token).startsWith('@')) {
+        outputJS = outputJS + String(token).substring(1, token.length) + " "
+      } else {
+        outputJS = outputJS + String(token) + " "
+      }
     } 
     } else {ti--}
   } outputJS+="\n"
@@ -55,6 +59,9 @@ for (line of outputJS.split('\n')) {
   replaceOut(' ( ', '(')
 }
 
+if (outputJS.includes("//.ask")) {
+  outputJS = "const prompt = require('prompt-sync')();\n" + outputJS
+}
 console.log(outputJS);
 
 try {fs.readFileSync('./out/output.js')} catch {

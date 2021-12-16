@@ -1,10 +1,16 @@
-var variable = 1 + 2
-!var constant = { 1, 2, "three" }
+# .ask
+
+var variable = 1 + 2 ;
+!var constant = [ 1, 2, "three" ]
 print ( variable )
 print ( PI )
 print ( variable + 2 )
-define soup
-  print ( variable )
+define soup 
+  print ( variable ) 
 end
 
-print( str ( ceilOf ( 5.3 ) ) + " is the ceiling of 5.3" )
+var tempCeil = ceilOf ( 5.3 )
+
+print ( tostr tempCeil + " is @@ @the ceiling of 5.3" )
+q = "What's your name?"
+name = ask q
