@@ -1,3 +1,5 @@
 .breakpoints
 .replit
-out/*
+out/
+
+node_modules/
