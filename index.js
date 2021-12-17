@@ -9,26 +9,17 @@ const getFilePath = function () {
     return a + ".lfi";
   }
 };
-function replaceIn(a, b) {
-  inputString = inputString.replace(a, b);
+function replaceIn(a, b, c) {
+  try {inputFileRaw = inputFileRaw.replace(a, b);} finally {}
 }
-const inputFileRaw = new String(fs.readFileSync(getFilePath()));
+var inputFileRaw = String(fs.readFileSync(getFilePath()));
 var outputJS = new String();
 console.log("");
-var inputString = inputFileRaw.split("\n");
 const listVals = [];
-for (line of inputString.split("\n")) {
-  replaceIn(" )", ")");
-  replaceIn(" (", "(");
-  replaceIn(") ", ")");
-  replaceIn("( ", "(");
-  replaceIn(" ) ", ")");
-  replaceIn(" ( ", "(");
-  replaceIn(")", " ) ");
-  replaceIn("(", " ( ");
-  replaceIn(" @ )", " @) ");
-  replaceIn(" @ (", " @( ");
+for (line of inputFileRaw) {
+  replaceIn("\n\n", '\n')
 }
+var inputString = inputFileRaw.split("\n");
 var getLines = function () {
   inputString.forEach(function (a) {
     listVals.push(a.split(" "));
