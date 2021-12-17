@@ -39,6 +39,8 @@ const tokenOf = {
   ask: "prompt(•)",
   mod: "%",
   "#": "//",
+  systemArch: "process.arch",
+  systemPlatform: "process.platform"
 };
 const moduleImports = {
   "// .ask": "const prompt = require('prompt-sync')();",
