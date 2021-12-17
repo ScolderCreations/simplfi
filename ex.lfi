@@ -1,5 +1,7 @@
 # .ask
 
+print ( "Code running on " + systemPlatform + systemArch )
+
 var variable = 1 + 2 ;
 !var constant = [ 1, 2, "three" ]
 print ( variable )
