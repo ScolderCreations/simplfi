@@ -10,14 +10,17 @@ const getFilePath = function () {
   }
 };
 function replaceIn(a, b, c) {
-  try {inputFileRaw = inputFileRaw.replace(a, b);} finally {}
+  try {
+    inputFileRaw = inputFileRaw.replace(a, b);
+  } finally {
+  }
 }
 var inputFileRaw = String(fs.readFileSync(getFilePath()));
 var outputJS = new String();
 console.log("");
 const listVals = [];
 for (line of inputFileRaw) {
-  replaceIn("\n\n", '\n')
+  replaceIn("\n\n", "\n");
 }
 var inputString = inputFileRaw.split("\n");
 var getLines = function () {
