@@ -26,7 +26,7 @@ const tokenOf = {
   ceilOf: "Math.ceil",
   tostr: "•.toString()",
   str: "String",
-  combineText: '"".concat',
+  combine: '"".concat',
   toLowercase: "•.toLowerCase()",
   toAllCaps: "•.toUpperCase()",
   trimText: "•.splice(∞)",
