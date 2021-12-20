@@ -41,11 +41,11 @@ let TokenModule = class { tokenOf = {
   "#": "//",
   systemArch: "process.arch",
   systemPlatform: "process.platform"
-},
+}
 moduleImports = {
   "// .ask": "const prompt = require('prompt-sync')();",
   "// .file": "const fs = require('fs');",
-},
+}
 modules = ["// .ask", "// .file"]
                   }
 //
