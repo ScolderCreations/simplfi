@@ -1,4 +1,4 @@
-class TokenModule { tokenOf = {
+let TokenModule = class { tokenOf = {
   "|": "||",
   "\\": "\\",
   "[": "[",
