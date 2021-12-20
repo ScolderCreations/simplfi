@@ -40,7 +40,7 @@ class TokenModule { tokenOf = {
   mod: "%",
   "#": "//",
   systemArch: "process.arch",
-  systemPlatform: "process.platform",
+  systemPlatform: "process.platform"
 },
 moduleImports = {
   "// .ask": "const prompt = require('prompt-sync')();",
