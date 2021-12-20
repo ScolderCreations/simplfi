@@ -1,4 +1,56 @@
-const tokens = require("./tokens.js");
+class TokenModule { tokenOf = {
+  "|": "||",
+  "\\": "\\",
+  "[": "[",
+  "]": "]",
+  "&": "&&",
+  "}": "}",
+  "~=": "==",
+  "==": "===",
+  "++": "++",
+  "--": "--",
+  ">=": ">=",
+  "<=": "<=",
+  "!=": "!==",
+  "#!=": "!===",
+  "&&": "&",
+  define: "function •() {",
+  print: "console.log",
+  class: "class • {¶}",
+  import: "import * from •",
+  if: "if (•) {",
+  else: "else {",
+  elif: "else if (•) {",
+  PI: "Math.PI",
+  floorOf: "Math.floor",
+  ceilOf: "Math.ceil",
+  tostr: "•.toString()",
+  str: "String",
+  combine: '"".concat',
+  toLowercase: "•.toLowerCase()",
+  toAllCaps: "•.toUpperCase()",
+  trimText: "•.splice(∞)",
+  end: "}",
+  randomDecimal: "Math.random",
+  list: "Array",
+  obj: "Object",
+  set: "new Set",
+  "!var": "const",
+  ask: "prompt(•)",
+  mod: "%",
+  "#": "//",
+  systemArch: "process.arch",
+  systemPlatform: "process.platform",
+},
+moduleImports = {
+  "// .ask": "const prompt = require('prompt-sync')();",
+  "// .file": "const fs = require('fs');",
+},
+modules = ["// .ask", "// .file"]
+                  }
+//
+
+const tokens = new TokenModule;
 const fs = require("fs");
 const prompt = require("prompt-sync")();
 const getFilePath = function () {
