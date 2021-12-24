@@ -49,21 +49,26 @@ for (line of listVals) {
               ) +
               " ";
           } else {
-            outputJS =
+            if (String(token).startsWith("@")) {
+              outputJS =
               outputJS +
               tokens.tokenOf[token].replace("•", line[lineind + 1]) +
               " ";
+            } else { outputJS = outputJS + String(token) + " ";
           }
           if (tokens.tokenOf[token].includes("∞")) {
             ti++;
             if (tokens.tokenOf[line[lineind + 2]]) {
-              outputJS =
+              if (String(token).startsWith("@")) {
+                outputJS =
                 outputJS +
                 tokens.tokenOf[token].replace(
                   "∞",
                   tokens.tokenOf[line[lineind + 2]]
                 ) +
                 " ";
+              }
+              else {outputJS = outputJS + String(token) + " ";
             } else {
               outputJS =
                 outputJS +
@@ -75,9 +80,6 @@ for (line of listVals) {
           outputJS = outputJS + tokens.tokenOf[token] + " ";
         }
       } else {
-        if (String(token).startsWith("@")) {
-          outputJS = outputJS + String(token).substring(1, token.length) + " ";
-        } else {
           outputJS = outputJS + String(token) + " ";
         }
       }
