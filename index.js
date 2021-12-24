@@ -70,7 +70,6 @@ for (line of listVals) {
               }
               else {outputJS = outputJS + String(token) + " ";
             } 
-          }
         } else {
           outputJS = outputJS + tokens.tokenOf[token] + " ";
         }
