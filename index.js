@@ -82,9 +82,9 @@ for (line of listVals) {
           ti--;
         }
       }
-      outputJS += "\n";
     }
   }
+  outputJS += "\n";
 }
 function replaceOut(a, b) {
   outputJS = outputJS.replace(a, b);
