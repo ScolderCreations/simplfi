@@ -1,21 +1,21 @@
 # .ask
 
-print ( "Code running on " + systemPlatform + systemArch )
+@print ( "Code running on " + @systemPlatform + @systemArch )
 
-var variable = 1 + 2 ;
-!var constant = [ 1, 2, "three" ]
-print ( variable )
-print ( PI )
-print ( variable + 2 )
-define soup 
-  print ( variable ) 
-end
+@var variable = 1 + 2 ;
+@!var constant = [ 1, 2, "three" ]
+@print ( variable )
+@print ( @PI )
+@print ( variable + 2 )
+@define soup 
+  @print ( variable ) 
+@end
 
-var tempCeil = ceilOf ( 5.3 )
+@var @tempCeil = @ceilOf ( 5.3 )
 
-print ( tostr tempCeil + " is @@ @the ceiling of 5.3" )
-q = "What's your name?"
-name = ask q
-print ( name )
+@print ( tostr tempCeil + " is the ceiling of 5.3" )
+@var q = "What's your name?"
+@var name = ask q
+@print ( name )
 
-print ( combine ( "hi " , name ) )
+@print ( @join ( "hi " , name ) )
