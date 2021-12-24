@@ -69,12 +69,7 @@ for (line of listVals) {
                 " ";
               }
               else {outputJS = outputJS + String(token) + " ";
-            } else {
-              outputJS =
-                outputJS +
-                tokens.tokenOf[token].replace("∞", line[lineind + 2]) +
-                " ";
-            }
+            } 
           }
         } else {
           outputJS = outputJS + tokens.tokenOf[token] + " ";
