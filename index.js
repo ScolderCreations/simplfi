@@ -51,38 +51,40 @@ for (line of listVals) {
           } else {
             if (String(token).startsWith("@")) {
               outputJS =
-              outputJS +
-              tokens.tokenOf[token].replace("•", line[lineind + 1]) +
-              " ";
-            } else { outputJS = outputJS + String(token) + " ";
-          }
-          if (tokens.tokenOf[token].includes("∞")) {
-            ti++;
-            if (tokens.tokenOf[line[lineind + 2]]) {
-              if (String(token).startsWith("@")) {
-                outputJS =
                 outputJS +
-                tokens.tokenOf[token].replace(
-                  "∞",
-                  tokens.tokenOf[line[lineind + 2]]
-                ) +
+                tokens.tokenOf[token].replace("•", line[lineind + 1]) +
                 " ";
+            } else {
+              outputJS = outputJS + String(token) + " ";
+            }
+            if (tokens.tokenOf[token].includes("∞")) {
+              ti++;
+              if (tokens.tokenOf[line[lineind + 2]]) {
+                if (String(token).startsWith("@")) {
+                  outputJS =
+                    outputJS +
+                    tokens.tokenOf[token].replace(
+                      "∞",
+                      tokens.tokenOf[line[lineind + 2]]
+                    ) +
+                    " ";
+                } else {
+                  outputJS = outputJS + String(token) + " ";
+                }
+              } else {
+                outputJS = outputJS + tokens.tokenOf[token] + " ";
               }
-              else {outputJS = outputJS + String(token) + " ";
-            } 
+            } else {
+              outputJS = outputJS + String(token) + " ";
+            }
+          }
         } else {
-          outputJS = outputJS + tokens.tokenOf[token] + " ";
-        }
-      } else {
-          outputJS = outputJS + String(token) + " ";
+          ti--;
         }
       }
-    } else {
-      ti--;
+      outputJS += "\n";
     }
   }
-  outputJS += "\n";
-}}
 }
 function replaceOut(a, b) {
   outputJS = outputJS.replace(a, b);
