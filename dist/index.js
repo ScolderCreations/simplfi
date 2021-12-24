@@ -28,6 +28,7 @@ let TokenModule = class {
     tostr: "•.toString()",
     str: "String",
     combine: '"".concat',
+    join: '"".concat',
     toLowercase: "•.toLowerCase()",
     toAllCaps: "•.toUpperCase()",
     trimText: "•.splice(∞)",
