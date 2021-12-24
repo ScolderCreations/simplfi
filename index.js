@@ -82,7 +82,7 @@ for (line of listVals) {
     }
   }
   outputJS += "\n";
-}
+}}
 
 function replaceOut(a, b) {
   outputJS = outputJS.replace(a, b);
